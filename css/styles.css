@@ -1,0 +1,54 @@
+.bgimage {
+  background-image: url('../images/glass_city.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+}
+
+html {
+  background: lightblue;
+}
+
+body {
+  background: white;
+  margin: 1em;
+}
+
+nav, footer {
+  border: solid thin lightgray;
+  margin: 1em 0em;
+  padding: 0px 50px 0px;
+}
+
+nav {
+  width: 80%%;
+  min-height: 50px;
+}
+
+li {
+  padding: 10px;
+}
+
+aside {
+  float: left;
+  border: solid thin lightgray;
+  margin: 2em;
+}
+
+footer { 
+  clear: both;
+}
+
+.nav_element {
+  float: left;
+  margin: 0px 5px;
+}
+
+#content_main {
+  float: left;
+  width: 80%%;
+  min-height: 50px;
+  border: solid thin lightgray;
+  margin: 2em;
+}
+
