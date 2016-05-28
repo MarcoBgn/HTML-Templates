@@ -16,7 +16,7 @@ body {
 
 nav, footer {
   border: solid thin lightgray;
-  margin: 1em 0em;
+  margin: 1em 0.2em;
   padding: 0px 50px 0px;
 }
 
@@ -32,7 +32,8 @@ li {
 aside {
   float: left;
   border: solid thin lightgray;
-  margin: 2em;
+  margin: 0.25em;
+  padding: 0.25em;
 }
 
 footer { 
@@ -44,11 +45,29 @@ footer {
   margin: 0px 5px;
 }
 
-#content_main {
+#content_first, #content_second {
   float: left;
-  width: 80%%;
-  min-height: 50px;
+  max-width: 35%;
   border: solid thin lightgray;
-  margin: 2em;
+  margin: 0.25em;
 }
 
+@media (max-width: 628px) {
+  #content_first, #content_second {
+    float: left;
+    max-width: 45%;
+  }
+  aside {
+    float: none;
+  }
+}
+
+@media (max-width: 390px) {
+  #content_first, #content_second {
+    float: none;
+    max-width: 100%;
+  }
+  aside {
+    float: none;
+  }
+}
