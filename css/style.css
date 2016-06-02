@@ -1,0 +1,99 @@
+/*Reset*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*elements*/
+
+div {
+  height: 200px;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.element1 {
+  width: 100%;
+  background-color: blue;
+}
+.element2 {
+  width: 100%;
+  background-color: red;
+}
+.element3 {
+  width: 100%;
+  background-color: green;
+}
+.element4 {
+  width: 100%;
+  background-color: lightgray;
+}
+.element5 {
+  width: 100%;
+  background-color: black;
+}
+.element6 {
+  width: 100%;
+  background-color: pink;
+}
+.element7 {
+  width: 100%;
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 600px) {
+  .element1 {
+    width: 33%; order: 1;
+  }
+
+  .element2 {
+    width: 100%; order: 0;
+  }
+
+  .element3 {
+    width: 33%; order: 2;
+  }
+
+  .element4 {
+    width: 34%; order: 3;
+  }
+
+  .element5 {
+    width: 50%; order: 4;
+  }
+
+  .element6 {
+    width: 50%; order: 5;
+  }
+
+  .element7 {
+    width: 100%; order: 6;
+  }
+}
